@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		133021E123B00CB600EEFD27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133021E023B00CB600EEFD27 /* AppDelegate.swift */; };
+		133021E323B00CB600EEFD27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133021E223B00CB600EEFD27 /* SceneDelegate.swift */; };
+		133021E623B00CB600EEFD27 /* Derby.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 133021E423B00CB600EEFD27 /* Derby.xcdatamodeld */; };
+		133021E823B00CB600EEFD27 /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133021E723B00CB600EEFD27 /* RecipeCard.swift */; };
+		133021EA23B00CB700EEFD27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 133021E923B00CB700EEFD27 /* Assets.xcassets */; };
+		133021ED23B00CB700EEFD27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 133021EC23B00CB700EEFD27 /* Preview Assets.xcassets */; };
+		133021F023B00CB700EEFD27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133021EE23B00CB700EEFD27 /* LaunchScreen.storyboard */; };
+		133021FB23B00CB700EEFD27 /* DerbyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133021FA23B00CB700EEFD27 /* DerbyTests.swift */; };
+		1330220623B00CB700EEFD27 /* DerbyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1330220523B00CB700EEFD27 /* DerbyUITests.swift */; };
+		1330221523B00DF300EEFD27 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1330221423B00DF300EEFD27 /* Recipe.swift */; };
+		1330221823B00E7F00EEFD27 /* Nameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1330221723B00E7F00EEFD27 /* Nameable.swift */; };
+		1330221A23B00FF800EEFD27 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1330221923B00FF800EEFD27 /* Ingredient.swift */; };
+		13501BE323C2E03E00E7E90C /* RecipeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13501BE223C2E03E00E7E90C /* RecipeCollection.swift */; };
+		13501BE523C2E30F00E7E90C /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13501BE423C2E30F00E7E90C /* AppData.swift */; };
+		13B7D08B23C29AE000EFC2AD /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B7D08A23C29AE000EFC2AD /* SideMenu.swift */; };
+		13DC0875245D243B00AC9E36 /* RoundedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC0874245D243B00AC9E36 /* RoundedButtonStyle.swift */; };
+		13DC087A245D2CB900AC9E36 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC0879245D2CB900AC9E36 /* CollectionView.swift */; };
+		13E3915823B90F6C0027AF51 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E3915723B90F6C0027AF51 /* HomePage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		133021F723B00CB700EEFD27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 133021D523B00CB600EEFD27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 133021DC23B00CB600EEFD27;
+			remoteInfo = Derby;
+		};
+		1330220223B00CB700EEFD27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 133021D523B00CB600EEFD27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 133021DC23B00CB600EEFD27;
+			remoteInfo = Derby;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		133021DD23B00CB600EEFD27 /* Derby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Derby.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		133021E023B00CB600EEFD27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		133021E223B00CB600EEFD27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		133021E523B00CB600EEFD27 /* Derby.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Derby.xcdatamodel; sourceTree = "<group>"; };
+		133021E723B00CB600EEFD27 /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
+		133021E923B00CB700EEFD27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		133021EC23B00CB700EEFD27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		133021EF23B00CB700EEFD27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		133021F123B00CB700EEFD27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		133021F623B00CB700EEFD27 /* DerbyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DerbyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		133021FA23B00CB700EEFD27 /* DerbyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerbyTests.swift; sourceTree = "<group>"; };
+		133021FC23B00CB700EEFD27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1330220123B00CB700EEFD27 /* DerbyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DerbyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1330220523B00CB700EEFD27 /* DerbyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerbyUITests.swift; sourceTree = "<group>"; };
+		1330220723B00CB700EEFD27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1330221423B00DF300EEFD27 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		1330221723B00E7F00EEFD27 /* Nameable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nameable.swift; sourceTree = "<group>"; };
+		1330221923B00FF800EEFD27 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		13501BE223C2E03E00E7E90C /* RecipeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCollection.swift; sourceTree = "<group>"; };
+		13501BE423C2E30F00E7E90C /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		13B7D08A23C29AE000EFC2AD /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		13DC0874245D243B00AC9E36 /* RoundedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonStyle.swift; sourceTree = "<group>"; };
+		13DC0879245D2CB900AC9E36 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		13E3915723B90F6C0027AF51 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		133021DA23B00CB600EEFD27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		133021F323B00CB700EEFD27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		133021FE23B00CB700EEFD27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		133021D423B00CB600EEFD27 = {
+			isa = PBXGroup;
+			children = (
+				133021DF23B00CB600EEFD27 /* Derby */,
+				133021F923B00CB700EEFD27 /* DerbyTests */,
+				1330220423B00CB700EEFD27 /* DerbyUITests */,
+				133021DE23B00CB600EEFD27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		133021DE23B00CB600EEFD27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				133021DD23B00CB600EEFD27 /* Derby.app */,
+				133021F623B00CB700EEFD27 /* DerbyTests.xctest */,
+				1330220123B00CB700EEFD27 /* DerbyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		133021DF23B00CB600EEFD27 /* Derby */ = {
+			isa = PBXGroup;
+			children = (
+				133021E023B00CB600EEFD27 /* AppDelegate.swift */,
+				133021E223B00CB600EEFD27 /* SceneDelegate.swift */,
+				133021E923B00CB700EEFD27 /* Assets.xcassets */,
+				133021EE23B00CB700EEFD27 /* LaunchScreen.storyboard */,
+				133021F123B00CB700EEFD27 /* Info.plist */,
+				133021E423B00CB600EEFD27 /* Derby.xcdatamodeld */,
+				1330221B23B017B000EEFD27 /* Views */,
+				1330221323B00DE100EEFD27 /* Models */,
+				133021EB23B00CB700EEFD27 /* Preview Content */,
+			);
+			path = Derby;
+			sourceTree = "<group>";
+		};
+		133021EB23B00CB700EEFD27 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				133021EC23B00CB700EEFD27 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		133021F923B00CB700EEFD27 /* DerbyTests */ = {
+			isa = PBXGroup;
+			children = (
+				133021FA23B00CB700EEFD27 /* DerbyTests.swift */,
+				133021FC23B00CB700EEFD27 /* Info.plist */,
+			);
+			path = DerbyTests;
+			sourceTree = "<group>";
+		};
+		1330220423B00CB700EEFD27 /* DerbyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1330220523B00CB700EEFD27 /* DerbyUITests.swift */,
+				1330220723B00CB700EEFD27 /* Info.plist */,
+			);
+			path = DerbyUITests;
+			sourceTree = "<group>";
+		};
+		1330221323B00DE100EEFD27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1330221623B00E6F00EEFD27 /* Protocols */,
+				13501BE423C2E30F00E7E90C /* AppData.swift */,
+				13501BE223C2E03E00E7E90C /* RecipeCollection.swift */,
+				1330221423B00DF300EEFD27 /* Recipe.swift */,
+				1330221923B00FF800EEFD27 /* Ingredient.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1330221623B00E6F00EEFD27 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1330221723B00E7F00EEFD27 /* Nameable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1330221B23B017B000EEFD27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13DC0872245D241000AC9E36 /* SwiftUI Helpers */,
+				133021E723B00CB600EEFD27 /* RecipeCard.swift */,
+				13E3915723B90F6C0027AF51 /* HomePage.swift */,
+				13B7D08A23C29AE000EFC2AD /* SideMenu.swift */,
+				13DC0879245D2CB900AC9E36 /* CollectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		13DC0872245D241000AC9E36 /* SwiftUI Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				13DC0873245D241A00AC9E36 /* ButtonStyles */,
+			);
+			path = "SwiftUI Helpers";
+			sourceTree = "<group>";
+		};
+		13DC0873245D241A00AC9E36 /* ButtonStyles */ = {
+			isa = PBXGroup;
+			children = (
+				13DC0874245D243B00AC9E36 /* RoundedButtonStyle.swift */,
+			);
+			path = ButtonStyles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		133021DC23B00CB600EEFD27 /* Derby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1330220A23B00CB700EEFD27 /* Build configuration list for PBXNativeTarget "Derby" */;
+			buildPhases = (
+				133021D923B00CB600EEFD27 /* Sources */,
+				133021DA23B00CB600EEFD27 /* Frameworks */,
+				133021DB23B00CB600EEFD27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Derby;
+			productName = Derby;
+			productReference = 133021DD23B00CB600EEFD27 /* Derby.app */;
+			productType = "com.apple.product-type.application";
+		};
+		133021F523B00CB700EEFD27 /* DerbyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1330220D23B00CB700EEFD27 /* Build configuration list for PBXNativeTarget "DerbyTests" */;
+			buildPhases = (
+				133021F223B00CB700EEFD27 /* Sources */,
+				133021F323B00CB700EEFD27 /* Frameworks */,
+				133021F423B00CB700EEFD27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				133021F823B00CB700EEFD27 /* PBXTargetDependency */,
+			);
+			name = DerbyTests;
+			productName = DerbyTests;
+			productReference = 133021F623B00CB700EEFD27 /* DerbyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1330220023B00CB700EEFD27 /* DerbyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1330221023B00CB700EEFD27 /* Build configuration list for PBXNativeTarget "DerbyUITests" */;
+			buildPhases = (
+				133021FD23B00CB700EEFD27 /* Sources */,
+				133021FE23B00CB700EEFD27 /* Frameworks */,
+				133021FF23B00CB700EEFD27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1330220323B00CB700EEFD27 /* PBXTargetDependency */,
+			);
+			name = DerbyUITests;
+			productName = DerbyUITests;
+			productReference = 1330220123B00CB700EEFD27 /* DerbyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		133021D523B00CB600EEFD27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Ben Hollar";
+				TargetAttributes = {
+					133021DC23B00CB600EEFD27 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					133021F523B00CB700EEFD27 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 133021DC23B00CB600EEFD27;
+					};
+					1330220023B00CB700EEFD27 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 133021DC23B00CB600EEFD27;
+					};
+				};
+			};
+			buildConfigurationList = 133021D823B00CB600EEFD27 /* Build configuration list for PBXProject "Derby" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 133021D423B00CB600EEFD27;
+			productRefGroup = 133021DE23B00CB600EEFD27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				133021DC23B00CB600EEFD27 /* Derby */,
+				133021F523B00CB700EEFD27 /* DerbyTests */,
+				1330220023B00CB700EEFD27 /* DerbyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		133021DB23B00CB600EEFD27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133021F023B00CB700EEFD27 /* LaunchScreen.storyboard in Resources */,
+				133021ED23B00CB700EEFD27 /* Preview Assets.xcassets in Resources */,
+				133021EA23B00CB700EEFD27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		133021F423B00CB700EEFD27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		133021FF23B00CB700EEFD27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		133021D923B00CB600EEFD27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133021E623B00CB600EEFD27 /* Derby.xcdatamodeld in Sources */,
+				13501BE323C2E03E00E7E90C /* RecipeCollection.swift in Sources */,
+				133021E123B00CB600EEFD27 /* AppDelegate.swift in Sources */,
+				1330221A23B00FF800EEFD27 /* Ingredient.swift in Sources */,
+				13501BE523C2E30F00E7E90C /* AppData.swift in Sources */,
+				13DC087A245D2CB900AC9E36 /* CollectionView.swift in Sources */,
+				13B7D08B23C29AE000EFC2AD /* SideMenu.swift in Sources */,
+				133021E823B00CB600EEFD27 /* RecipeCard.swift in Sources */,
+				13DC0875245D243B00AC9E36 /* RoundedButtonStyle.swift in Sources */,
+				133021E323B00CB600EEFD27 /* SceneDelegate.swift in Sources */,
+				1330221523B00DF300EEFD27 /* Recipe.swift in Sources */,
+				1330221823B00E7F00EEFD27 /* Nameable.swift in Sources */,
+				13E3915823B90F6C0027AF51 /* HomePage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		133021F223B00CB700EEFD27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133021FB23B00CB700EEFD27 /* DerbyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		133021FD23B00CB700EEFD27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1330220623B00CB700EEFD27 /* DerbyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		133021F823B00CB700EEFD27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 133021DC23B00CB600EEFD27 /* Derby */;
+			targetProxy = 133021F723B00CB700EEFD27 /* PBXContainerItemProxy */;
+		};
+		1330220323B00CB700EEFD27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 133021DC23B00CB600EEFD27 /* Derby */;
+			targetProxy = 1330220223B00CB700EEFD27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		133021EE23B00CB700EEFD27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				133021EF23B00CB700EEFD27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1330220823B00CB700EEFD27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1330220923B00CB700EEFD27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1330220B23B00CB700EEFD27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Derby/Preview Content\"";
+				DEVELOPMENT_TEAM = AZALPYZU3U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derby/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benhollar.Derby;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1330220C23B00CB700EEFD27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Derby/Preview Content\"";
+				DEVELOPMENT_TEAM = AZALPYZU3U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derby/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benhollar.Derby;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1330220E23B00CB700EEFD27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZALPYZU3U;
+				INFOPLIST_FILE = DerbyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benhollar.DerbyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Derby.app/Derby";
+			};
+			name = Debug;
+		};
+		1330220F23B00CB700EEFD27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZALPYZU3U;
+				INFOPLIST_FILE = DerbyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benhollar.DerbyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Derby.app/Derby";
+			};
+			name = Release;
+		};
+		1330221123B00CB700EEFD27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZALPYZU3U;
+				INFOPLIST_FILE = DerbyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benhollar.DerbyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Derby;
+			};
+			name = Debug;
+		};
+		1330221223B00CB700EEFD27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZALPYZU3U;
+				INFOPLIST_FILE = DerbyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benhollar.DerbyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Derby;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		133021D823B00CB600EEFD27 /* Build configuration list for PBXProject "Derby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1330220823B00CB700EEFD27 /* Debug */,
+				1330220923B00CB700EEFD27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1330220A23B00CB700EEFD27 /* Build configuration list for PBXNativeTarget "Derby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1330220B23B00CB700EEFD27 /* Debug */,
+				1330220C23B00CB700EEFD27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1330220D23B00CB700EEFD27 /* Build configuration list for PBXNativeTarget "DerbyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1330220E23B00CB700EEFD27 /* Debug */,
+				1330220F23B00CB700EEFD27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1330221023B00CB700EEFD27 /* Build configuration list for PBXNativeTarget "DerbyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1330221123B00CB700EEFD27 /* Debug */,
+				1330221223B00CB700EEFD27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		133021E423B00CB600EEFD27 /* Derby.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				133021E523B00CB600EEFD27 /* Derby.xcdatamodel */,
+			);
+			currentVersion = 133021E523B00CB600EEFD27 /* Derby.xcdatamodel */;
+			path = Derby.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 133021D523B00CB600EEFD27 /* Project object */;
+}
