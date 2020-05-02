@@ -58,6 +58,9 @@ private struct MainView: View {
                 .cornerRadius(30)
             // TODO: Need to hack around placeholder text color?
             Spacer()
+            Image("chef")
+                .resizable()
+                .aspectRatio(1, contentMode: .fit)
             Text("CHEF")
                 .font(.largeTitle)
                 .fontWeight(.bold)
