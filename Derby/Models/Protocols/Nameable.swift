@@ -10,7 +10,7 @@ import Foundation
 
 public protocol Nameable {
     
-    /// The name of the object.
+    /// The name of the object
     var name: String {get set}
     
 }

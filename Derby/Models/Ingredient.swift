@@ -12,16 +12,18 @@ public class Ingredient : Nameable, ObservableObject {
     
     // MARK: - Properties
     
+    /// The name of the ingredient
     public var name: String
     
-    /// The amount of the ingredient to be used, stored in grams.
-    public var quantity: Double
+    /// The ingredient's nutritional information
+    public var nutrition: Nutrition?
     
     // MARK: - Methods
     
-    init(name: String, quantity: Double) {
+    /// Create a new ingredient
+    init(name: String, nutrition: Nutrition? = nil) {
         self.name = name
-        self.quantity = quantity
+        self.nutrition = nutrition
     }
     
 }
@@ -30,11 +32,11 @@ extension Ingredient : Hashable {
     
     public func hash(into hasher: inout Hasher) {
         hasher.combine(name)
-        hasher.combine(quantity)
+        hasher.combine(nutrition)
     }
     
     public static func == (lhs: Ingredient, rhs: Ingredient) -> Bool {
-        return (lhs.name == rhs.name) && (lhs.quantity == rhs.quantity)
+        return (lhs.name == rhs.name) && (lhs.nutrition == rhs.nutrition)
     }
     
 }
