@@ -18,6 +18,9 @@ public class Ingredient : Nameable, ObservableObject {
     /// The ingredient's nutritional information
     public var nutrition: Nutrition?
     
+    /// The cost of the ingredient
+    public var cost: Double?
+    
     // MARK: - Methods
     
     /// Create a new ingredient
@@ -33,6 +36,7 @@ extension Ingredient : Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(name)
         hasher.combine(nutrition)
+        hasher.combine(cost)
     }
     
     public static func == (lhs: Ingredient, rhs: Ingredient) -> Bool {

@@ -10,6 +10,24 @@ import Foundation
 
 public class Recipe : Nameable, ObservableObject {
     
+    // MARK: - Types
+    
+    public enum CookingDifficulty {
+        case beginner
+        case basic
+        case intermediate
+        case advanced
+        case expert
+    }
+    
+    public enum RecipeQuality {
+        case disgusting
+        case bad
+        case average
+        case good
+        case delicious
+    }
+    
     // MARK: - Properties
     
     /// The name of the recipe
@@ -36,6 +54,14 @@ public class Recipe : Nameable, ObservableObject {
     /// The number of servings this recipe makes
     public var servings: UInt?
     
+    /// The complexity of the recipe
+    public var cookingDifficulty: CookingDifficulty?
+    
+    /// The user's rating of the recipe
+    public var userRating: RecipeQuality?
+    
+    // MARK: - Computed Properties
+    
     /// The total nutrition information of the recipe, derived from its ingredients
     public var nutriton: Nutrition? {
         if ingredients.isEmpty { return nil }
@@ -59,6 +85,14 @@ public class Recipe : Nameable, ObservableObject {
                          fiber: zip(nutritionObjs.compactMap({ $0.fiber }), ingredientQuantities).map({$0.0 * $0.1}).reduce(0, +),
                          sugar: zip(nutritionObjs.compactMap({ $0.sugar }), ingredientQuantities).map({$0.0 * $0.1}).reduce(0, +),
                          protein: zip(nutritionObjs.compactMap({ $0.protein }), ingredientQuantities).map({$0.0 * $0.1}).reduce(0, +))
+    }
+    
+    /// The cost per serving of the recipe
+    public var costPerServing: Double? {
+        if ingredients.isEmpty { return nil }
+        
+        let (ingredientObjs, ingredientQuantities) = splitIngredients()
+        return zip(ingredientObjs.compactMap(({ $0.cost })), ingredientQuantities).map({ $0.0 * $0.1 }).reduce(0, +)
     }
     
     // MARK: - Methods
@@ -86,12 +120,8 @@ extension Recipe : Hashable {
     public func hash(into hasher: inout Hasher) {
         let (ingredientObjs, ingredientQuantities) = splitIngredients()
         hasher.combine(name)
-        hasher.combine(summary)
-        hasher.combine(source)
         hasher.combine(ingredientObjs)
         hasher.combine(ingredientQuantities)
-        hasher.combine(instructions)
-        hasher.combine(imageName)
     }
     
     public static func == (lhs: Recipe, rhs: Recipe) -> Bool {
@@ -103,7 +133,11 @@ extension Recipe : Hashable {
                (ingredientObjsL == ingredientObjsR) &&
                (ingredientQuantitiesL == ingredientQuantitiesR) &&
                (lhs.instructions == rhs.instructions) &&
-               (lhs.imageName == rhs.imageName)
+               (lhs.imageName == rhs.imageName) &&
+               (lhs.cookingTime == rhs.cookingTime) &&
+               (lhs.servings == rhs.servings) &&
+               (lhs.cookingDifficulty == rhs.cookingDifficulty) &&
+               (lhs.userRating == rhs.userRating)
     }
     
 }
