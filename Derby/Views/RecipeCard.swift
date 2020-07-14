@@ -12,52 +12,6 @@ struct RecipeCard: View {
     /// The recipe being illustrated on the card.
     @EnvironmentObject var recipe: Recipe
     
-    /// Determines if the detailed card information should be displayed
-    @State var showDetails: Bool = true
-    
-    var body: some View {
-        ZStack {
-            TitleSide().environmentObject(recipe)
-                .rotation3DEffect(.degrees($showDetails.wrappedValue ? 180.0 : 0.0), axis: (x: 0.0, y: 1.0, z: 0.0))
-                .zIndex($showDetails.wrappedValue ? 0 : 1)
-                .opacity($showDetails.wrappedValue ? 0 : 1)
-            DetailSide().environmentObject(recipe)
-                .rotation3DEffect(.degrees($showDetails.wrappedValue ? 0.0 : 180.0), axis: (x: 0.0, y: -1.0, z: 0.0))
-                .zIndex($showDetails.wrappedValue ? 1 : 0)
-                .opacity($showDetails.wrappedValue ? 1 : 0)
-        }
-        .cornerRadius(10)
-        .overlay(
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray, lineWidth: 1)
-                .rotation3DEffect(.degrees($showDetails.wrappedValue ? 0.0 : 180.0), axis: (x: 0.0, y: -1.0, z: 0.0))
-        )
-        .padding([.top, .horizontal])
-        .onTapGesture {
-            withAnimation(.easeOut(duration: 0.25)){
-                self.showDetails.toggle()
-            }
-        }
-    }
-}
-
-private struct TitleSide: View {
-    @EnvironmentObject var recipe: Recipe
-    
-    var body: some View {
-        VStack {
-            Text($recipe.name.wrappedValue)
-                .font(.title)
-                .fontWeight(.bold)
-        }
-        .padding()
-        .background(Color.white)
-    }
-}
-
-private struct DetailSide: View {
-    @EnvironmentObject var recipe: Recipe
-    
     var body: some View {
         VStack {
             if $recipe.imageName.wrappedValue != nil {
@@ -84,19 +38,17 @@ private struct DetailSide: View {
             .padding()
         }
         .background(Color.white)
+            .cornerRadius(10)
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.gray, lineWidth: 1)
+            )
+        .padding([.top, .horizontal])
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var DemoRecipe: Recipe = {
-        let r = Recipe(name: "BA's Best Snickerdoodles")
-        r.summary = "For the snickerdoodle purists."
-        r.source = "Bon Appetit"
-        r.imageName = "bon-appetit-snickerdoodle"
-        return r
-    }()
-    
+struct ContentView_Previews: PreviewProvider {    
     static var previews: some View {
-        RecipeCard().environmentObject(DemoRecipe)
+        RecipeCard().environmentObject(Recipe.DemoRecipe)
     }
 }

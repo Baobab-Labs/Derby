@@ -108,6 +108,14 @@ public class Recipe : Nameable, ObservableObject {
         self.name = name
     }
     
+    static var DemoRecipe: Recipe = {
+        let r = Recipe(name: "BA's Best Snickerdoodles")
+        r.summary = "For the snickerdoodle purists."
+        r.source = "Bon Appetit"
+        r.imageName = "bon-appetit-snickerdoodle"
+        return r
+    }()
+    
     private func splitIngredients() -> ([Ingredient], [Double]) {
         return (ingredients.compactMap { $0.ingredient },
                 ingredients.compactMap { $0.quantity })

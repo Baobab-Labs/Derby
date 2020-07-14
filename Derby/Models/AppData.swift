@@ -6,16 +6,21 @@
 //  Copyright © 2020 Ben Hollar. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
+import CoreData
 
 public class AppData: ObservableObject {
+    
+    /// The app's CoreData context
+    @Environment(\.managedObjectContext) var managedObjectContext: NSManagedObjectContext
+    
     /// The user's RecipeCollections
     @Published var collections: [RecipeCollection]
     
     /// Create a new AppData with a default RecipeCollection
     convenience init() {
         self.init(collections: [RecipeCollection(name: "All Recipes",
-                                                 recipes: [Recipe(name: "Test")])])
+                                                 recipes: [Recipe.DemoRecipe])])
     }
     
     /// Create a new AppData
