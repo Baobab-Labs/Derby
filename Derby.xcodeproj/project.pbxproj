@@ -20,10 +20,10 @@
 		1330221823B00E7F00EEFD27 /* Nameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1330221723B00E7F00EEFD27 /* Nameable.swift */; };
 		1330221A23B00FF800EEFD27 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1330221923B00FF800EEFD27 /* Ingredient.swift */; };
 		13501BE323C2E03E00E7E90C /* RecipeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13501BE223C2E03E00E7E90C /* RecipeCollection.swift */; };
-		13501BE523C2E30F00E7E90C /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13501BE423C2E30F00E7E90C /* AppData.swift */; };
 		138A0400245FB2DE00771C87 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A03FF245FB2DE00771C87 /* Nutrition.swift */; };
 		13DC0875245D243B00AC9E36 /* RoundedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC0874245D243B00AC9E36 /* RoundedButtonStyle.swift */; };
 		13E3915823B90F6C0027AF51 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E3915723B90F6C0027AF51 /* HomePage.swift */; };
+		13EAA9A924BE9C6300FCB91D /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EAA9A824BE9C6300FCB91D /* Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,11 +63,11 @@
 		1330221723B00E7F00EEFD27 /* Nameable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nameable.swift; sourceTree = "<group>"; };
 		1330221923B00FF800EEFD27 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		13501BE223C2E03E00E7E90C /* RecipeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCollection.swift; sourceTree = "<group>"; };
-		13501BE423C2E30F00E7E90C /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		138A03FF245FB2DE00771C87 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
 		13DC0874245D243B00AC9E36 /* RoundedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonStyle.swift; sourceTree = "<group>"; };
 		13E3915723B90F6C0027AF51 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		13EAA9A624BD48CB00FCB91D /* Derby.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Derby.entitlements; sourceTree = "<group>"; };
+		13EAA9A824BE9C6300FCB91D /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +125,7 @@
 				133021EE23B00CB700EEFD27 /* LaunchScreen.storyboard */,
 				133021F123B00CB700EEFD27 /* Info.plist */,
 				133021E423B00CB600EEFD27 /* Derby.xcdatamodeld */,
+				13EAA9A724BE9C4F00FCB91D /* Extensions */,
 				1330221B23B017B000EEFD27 /* Views */,
 				1330221323B00DE100EEFD27 /* Models */,
 				133021EB23B00CB700EEFD27 /* Preview Content */,
@@ -162,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				1330221623B00E6F00EEFD27 /* Protocols */,
-				13501BE423C2E30F00E7E90C /* AppData.swift */,
 				13501BE223C2E03E00E7E90C /* RecipeCollection.swift */,
 				1330221423B00DF300EEFD27 /* Recipe.swift */,
 				1330221923B00FF800EEFD27 /* Ingredient.swift */,
@@ -203,6 +203,14 @@
 				13DC0874245D243B00AC9E36 /* RoundedButtonStyle.swift */,
 			);
 			path = ButtonStyles;
+			sourceTree = "<group>";
+		};
+		13EAA9A724BE9C4F00FCB91D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13EAA9A824BE9C6300FCB91D /* Array.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,10 +349,10 @@
 				138A0400245FB2DE00771C87 /* Nutrition.swift in Sources */,
 				133021E123B00CB600EEFD27 /* AppDelegate.swift in Sources */,
 				1330221A23B00FF800EEFD27 /* Ingredient.swift in Sources */,
-				13501BE523C2E30F00E7E90C /* AppData.swift in Sources */,
 				133021E823B00CB600EEFD27 /* RecipeCard.swift in Sources */,
 				13DC0875245D243B00AC9E36 /* RoundedButtonStyle.swift in Sources */,
 				133021E323B00CB600EEFD27 /* SceneDelegate.swift in Sources */,
+				13EAA9A924BE9C6300FCB91D /* Array.swift in Sources */,
 				1330221523B00DF300EEFD27 /* Recipe.swift in Sources */,
 				1330221823B00E7F00EEFD27 /* Nameable.swift in Sources */,
 				13E3915823B90F6C0027AF51 /* HomePage.swift in Sources */,

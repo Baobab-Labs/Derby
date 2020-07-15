@@ -10,7 +10,7 @@ import SwiftUI
 
 struct RecipeCard: View {
     /// The recipe being illustrated on the card.
-    @EnvironmentObject var recipe: Recipe
+    @ObservedObject var recipe: Recipe
     
     var body: some View {
         VStack {
@@ -47,8 +47,9 @@ struct RecipeCard: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {    
+struct RecipeCard_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeCard().environmentObject(Recipe.DemoRecipe)
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        return RecipeCard(recipe: Recipe.makeDemoRecipe(context: context)).environment(\.managedObjectContext, context)
     }
 }

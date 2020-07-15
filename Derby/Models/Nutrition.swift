@@ -7,58 +7,42 @@
 //
 
 import Foundation
+import CoreData
+import SwiftUI
 
-public class Nutrition : ObservableObject {
+public class Nutrition : NSManagedObject {
     
     // MARK: - Properties
     
     /// The amount of calories (kCal)
-    public var calories: Double
+    @NSManaged public var calories: Double
     
     /// The total fat (grams)
-    public var totalFat: Double
+    @NSManaged public var totalFat: Double
     
     /// The saturated fat (grams)
-    public var saturatedFat: Double
+    @NSManaged public var saturatedFat: Double
     
     /// The trans fat (grams)
-    public var transFat: Double
+    @NSManaged public var transFat: Double
     
     /// The cholesterol (milligrams)
-    public var cholesterol: Double
+    @NSManaged public var cholesterol: Double
     
     /// The sodium (milligrams)
-    public var sodium: Double
+    @NSManaged public var sodium: Double
     
     /// The carbohydrates (grams)
-    public var carbohydrates: Double
+    @NSManaged public var carbohydrates: Double
     
     /// The amount of  fiber (grams)
-    public var fiber: Double
+    @NSManaged public var fiber: Double
     
     /// The amount of sugar  (grams)
-    public var sugar: Double
+    @NSManaged public var sugar: Double
     
     /// The protein content (grams)
-    public var protein: Double
-    
-    // MARK: - Methods
-    
-    /// Create a new Nutrition object
-    init(calories: Double = 0, totalFat: Double = 0, saturatedFat: Double = 0, transFat: Double = 0, cholesterol: Double = 0,
-         sodium: Double = 0, carbohydrates: Double = 0, fiber: Double = 0, sugar: Double = 0, protein: Double = 0) {
-        
-        self.calories = calories
-        self.totalFat = totalFat
-        self.saturatedFat = saturatedFat
-        self.transFat = transFat
-        self.cholesterol = cholesterol
-        self.sodium = sodium
-        self.carbohydrates = carbohydrates
-        self.fiber = fiber
-        self.sugar = sugar
-        self.protein = protein
-    }
+    @NSManaged public var protein: Double
     
 }
 
@@ -80,35 +64,21 @@ extension Nutrition {
     }
     
     public static func * (lhs: Nutrition, rhs: Double) -> Nutrition {
-        return Nutrition(calories: lhs.calories * rhs,
-                         totalFat: lhs.totalFat * rhs,
-                         saturatedFat: lhs.saturatedFat * rhs,
-                         transFat: lhs.transFat * rhs,
-                         cholesterol: lhs.cholesterol * rhs,
-                         sodium: lhs.sodium * rhs,
-                         carbohydrates: lhs.carbohydrates * rhs,
-                         fiber: lhs.fiber * rhs,
-                         sugar: lhs.sugar * rhs,
-                         protein: lhs.protein * rhs)
-    }
-    
-}
-
-// MARK: - Extensions
-
-extension Nutrition : Hashable {
-    
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(calories)
-        hasher.combine(totalFat)
-        hasher.combine(saturatedFat)
-        hasher.combine(transFat)
-        hasher.combine(cholesterol)
-        hasher.combine(sodium)
-        hasher.combine(carbohydrates)
-        hasher.combine(fiber)
-        hasher.combine(sugar)
-        hasher.combine(protein)
+        return {
+            let nutrition = NSEntityDescription.insertNewObject(forEntityName: "Nutrition",
+                                                                into: lhs.managedObjectContext!) as! Nutrition
+            nutrition.calories = lhs.calories * rhs
+            nutrition.totalFat = lhs.totalFat * rhs
+            nutrition.saturatedFat = lhs.saturatedFat * rhs
+            nutrition.transFat = lhs.transFat * rhs
+            nutrition.cholesterol = lhs.cholesterol * rhs
+            nutrition.sodium = lhs.sodium * rhs
+            nutrition.carbohydrates = lhs.carbohydrates * rhs
+            nutrition.fiber = lhs.fiber * rhs
+            nutrition.sugar = lhs.sugar * rhs
+            nutrition.protein = lhs.protein * rhs
+            return nutrition
+        }()
     }
     
 }
