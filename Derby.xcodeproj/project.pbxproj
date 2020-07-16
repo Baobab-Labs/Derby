@@ -70,7 +70,6 @@
 		138A03FF245FB2DE00771C87 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
 		13DC0874245D243B00AC9E36 /* RoundedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonStyle.swift; sourceTree = "<group>"; };
 		13E3915723B90F6C0027AF51 /* CollectionBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBrowser.swift; sourceTree = "<group>"; };
-		13EAA9A624BD48CB00FCB91D /* Derby.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Derby.entitlements; sourceTree = "<group>"; };
 		13EAA9A824BE9C6300FCB91D /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,7 +121,6 @@
 		133021DF23B00CB600EEFD27 /* Derby */ = {
 			isa = PBXGroup;
 			children = (
-				13EAA9A624BD48CB00FCB91D /* Derby.entitlements */,
 				133021E023B00CB600EEFD27 /* AppDelegate.swift */,
 				133021E223B00CB600EEFD27 /* SceneDelegate.swift */,
 				133021E923B00CB700EEFD27 /* Assets.xcassets */,

@@ -35,7 +35,7 @@ public class Recipe : NSManagedObject, Nameable {
     @NSManaged public var name: String
     
     /// A concise description of the recipe.
-    @NSManaged public var summary: String
+    @NSManaged public var summary: String?
     
     // The original source of the recipe.
     @NSManaged public var source: String?

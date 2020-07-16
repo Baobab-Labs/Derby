@@ -29,9 +29,11 @@ struct RecipeCard: View {
                         .fontWeight(.black)
                         .foregroundColor(.primary)
                         .lineLimit(3)
-                    Text($recipe.summary.wrappedValue)
-                        .font(.caption)
-                        .foregroundColor(.secondary)
+                    if ($recipe.summary.wrappedValue != nil) {
+                        Text($recipe.summary.wrappedValue!)
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }
                 }
                 .layoutPriority(100)
             }
@@ -50,6 +52,7 @@ struct RecipeCard: View {
 struct RecipeCard_Previews: PreviewProvider {
     static var previews: some View {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        return RecipeCard(recipe: Recipe.makeDemoRecipe(context: context)).environment(\.managedObjectContext, context)
+        let recipe = Recipe.makeDemoRecipe(context: context)
+        return RecipeCard(recipe: recipe).environment(\.managedObjectContext, context)
     }
 }
