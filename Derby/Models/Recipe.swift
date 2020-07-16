@@ -89,8 +89,7 @@ public class Recipe : NSManagedObject, Nameable {
         // nil-valued nutrition on any ingredient is ignored, per `compactMap`
         let (ingredientObjs, ingredientQuantities) = splitIngredients()
         let nutritionObjs = ingredientObjs.compactMap { $0.nutrition }
-        let nutrition = NSEntityDescription.insertNewObject(forEntityName: "Nutrition",
-                                                            into: self.managedObjectContext!) as! Nutrition
+        let nutrition = Nutrition(context: managedObjectContext!)
         nutrition.calories = zip(nutritionObjs.compactMap({ $0.calories }), ingredientQuantities).map({$0.0 * $0.1}).reduce(0, +)
         nutrition.totalFat = zip(nutritionObjs.compactMap({ $0.totalFat }), ingredientQuantities).map({$0.0 * $0.1}).reduce(0, +)
         nutrition.saturatedFat = zip(nutritionObjs.compactMap({ $0.saturatedFat }), ingredientQuantities).map({$0.0 * $0.1}).reduce(0, +)
