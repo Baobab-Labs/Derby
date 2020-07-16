@@ -15,7 +15,7 @@ public class RecipeCollection : NSManagedObject, Nameable {
     @NSManaged public var name: String
     
     /// The recipes of the collection
-    @NSManaged public var recipes: [Recipe]
+    @NSManaged public var recipes: Set<Recipe>
     
 }
 
