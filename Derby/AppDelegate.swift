@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if UserDefaults.isFirstLaunch() {
+            let collection = RecipeCollection(context: persistentContainer.viewContext)
+            collection.name = "All Recipes"
+            collection.recipes = [Recipe.makeDemoRecipe(context: persistentContainer.viewContext),
+                                  Recipe.makeDemoRecipe(context: persistentContainer.viewContext),
+                                  Recipe.makeDemoRecipe(context: persistentContainer.viewContext)]
+            saveContext()
+        }
         return true
     }
 
